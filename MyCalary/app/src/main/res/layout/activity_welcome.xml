@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.practice.jinghua_z.mycalary.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop = "40dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My total calories: "
+            android:textColor="#000000"
+            android:textSize="80dp"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="130dp"
+                android:layout_marginTop="100dp"
+                android:layout_weight="0.7"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="cal"
+                android:layout_weight="0.3"
+                android:textColor="#000000"
+                android:textSize="60dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="#8FBC8F">
+
+        <ImageView
+            android:src="@drawable/calories"
+            android:id="@+id/im1"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1" >
+            <Button
+                android:id="@+id/voice_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/round_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50dp"
+                android:text="Record Calaries"
+                android:textSize="25dp"
+                android:layout_weight="0.7"
+                />
+
+            <Button
+                android:id="@+id/detail_button"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_btn_2"
+                android:textSize="18dp"
+                android:text="More Details" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

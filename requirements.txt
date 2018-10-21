@@ -1,0 +1,8 @@
+Django==2.1.2
+gunicorn
+django-heroku
+django-filter==2.0.0
+djangorestframework==3.8.2
+Markdown==3.0.1
+pytz==2018.5
+virtualenv==16.0.0
