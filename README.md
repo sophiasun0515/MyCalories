@@ -1,4 +1,4 @@
-# voice-calories-app
+# My Calories - Smart Daily Calories Voice Recorder
 ### TRACK CALORIE-INTAKE HANDS-FREE! 
 
 Tell the app what you ate and it will do the rest for you within a second!
